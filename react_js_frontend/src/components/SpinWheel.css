@@ -1,0 +1,41 @@
+.spinwheel-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.spinwheel {
+  background: var(--bg-secondary, #fcfcfc);
+  border-radius: 18px;
+  box-shadow: 0 3px 10px rgba(245,163,175,0.12);
+  padding: 1.5rem 2.5rem 1rem 2.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.animal-label {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  color: var(--primary, #f5a3af);
+  font-weight: 600;
+}
+
+.spin-btn {
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 12px;
+  background: var(--primary, #f5a3af);
+  color: #fcfcfc;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.spin-btn:disabled {
+  background: var(--secondary, #720303);
+  color: #fff5f5;
+  cursor: not-allowed;
+}
